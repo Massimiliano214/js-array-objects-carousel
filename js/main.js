@@ -56,7 +56,7 @@ const backImg = document.querySelector(".up_button");
 
 const thumbDom = document.querySelector(".Thumbnails");
 
-
+let thumbImg = document.querySelectorAll(".thumbImg");
 for (let i = 0; i < images.length; i++) {
     thumbDom.innerHTML += 
     `
@@ -68,30 +68,22 @@ for (let i = 0; i < images.length; i++) {
 
 };
 
-let thumbImg = document.querySelector(".thumbImg");
 
-thumbImg.addEventListener("click", 
+/*
+for (let i = 0; i < thumbImg.length; i++) {
+    
+}
+thumbImg.addEventListener ("click",
     function() {
         thumbImg.classList.add("d_none");
         const insertImg = thumbImg;
         wrapCont += insertImg;
+    }  
+     
 
-    /*    
-    wrapImgDom =
-    `
-        <div class="image d_none">
-            <img class="photo" src="${this.image}">
-            <div class="text">
-                <h2>${this.title}</h2>
-                <p>${this.text}</p>
-            </div>
-        </div>    
-    `;
-        //this.classList.add("d_block");
-        //wrapImgDom[activeImg].classList.add("d_block");
-    */
-});
 
+);
+*/
 nextImg.addEventListener ("click",
     function() {
         if (activeImg < wrapImgDom.length - 1) {
@@ -142,7 +134,7 @@ backImg.addEventListener ("click",
 );
 
 
-const clock = setInterval(myFunction, 5000);
+const clock = setInterval(myFunction, 3000);
 
 
 
@@ -165,3 +157,38 @@ function myFunction() {
         wrapImgDom[activeImg].classList.add("d_block");
     }
 }
+
+
+
+
+invertiDom = document.getElementById("fine");
+
+
+
+
+
+
+invertiDom.addEventListener("click", 
+function() {
+    clearInterval(clock);
+    const ivertedClock = setInterval(invertedInterval, 3000);
+}
+);
+
+ function invertedInterval() {
+    if (activeImg > 0) {
+        wrapImgDom[activeImg].classList.remove("d_block");
+
+        activeImg--;
+
+        wrapImgDom[activeImg].classList.add("d_block");
+
+    } else if (activeImg == 0) {
+        wrapImgDom[activeImg].classList.remove("d_block");
+
+        activeImg = wrapImgDom.length - 1;
+
+        wrapImgDom[activeImg].classList.add("d_block");
+    }}
+
+

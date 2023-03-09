@@ -13,6 +13,7 @@ body {
     height: 70vh;
     margin: 15vh auto;
     background-color: black;
+    text-align: center;
 }
 
 .wrap {
@@ -20,6 +21,7 @@ body {
     width: 100%;
     position: relative;
     display: flex;
+    margin-bottom: 40px;
 }
 .image {
     height: 100%;
@@ -107,4 +109,20 @@ body {
     padding: 10px;
     text-align: right;
     width: 100%;
+}
+
+#inizio {
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+#fine {
+    background-color: white;
+    font-size: 2.5rem;
+    padding: 2px;
+    border-radius: 20px;
+    text-align: right;
+    margin-left: 20px;
 }
