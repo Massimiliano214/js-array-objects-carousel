@@ -73,6 +73,9 @@ let thumbImg = document.querySelector(".thumbImg");
 thumbImg.addEventListener("click", 
     function() {
         thumbImg.classList.add("d_none");
+        const insertImg = thumbImg;
+        wrapCont += insertImg;
+
     /*    
     wrapImgDom =
     `
