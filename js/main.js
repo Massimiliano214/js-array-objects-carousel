@@ -72,8 +72,21 @@ let thumbImg = document.querySelector(".thumbImg");
 
 thumbImg.addEventListener("click", 
     function() {
-        this.classList.add("d_block");
-        wrapImgDom[activeImg].classList.add("d_block");
+        thumbImg.classList.add("d_none");
+    /*    
+    wrapImgDom =
+    `
+        <div class="image d_none">
+            <img class="photo" src="${this.image}">
+            <div class="text">
+                <h2>${this.title}</h2>
+                <p>${this.text}</p>
+            </div>
+        </div>    
+    `;
+        //this.classList.add("d_block");
+        //wrapImgDom[activeImg].classList.add("d_block");
+    */
 });
 
 nextImg.addEventListener ("click",
