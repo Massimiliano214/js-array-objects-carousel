@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    width: 70%;
+    height: 70vh;
+    margin: 15vh auto;
+    background-color: black;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.list_img{
+    height: 100%;
+    width: 75%;
+}
+
+.photo {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.d_none {
+    display: none;
+}
+
+.image.d_block {
+    display: block;
+}
+
+.down_button {
+    bottom: 10px;
+    text-align: center;
+}
+
+.up_button {
+    
+    top: 10px;
+    text-align: center;
+   
+}
+
+.bg {
+    position: absolute;
+    font-size: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.icon_up {
+    padding-top: 8px;
+}
+
+.icon_down {
+    padding-top: 8px;
+}
+
+#downBt.cover {
+    display: none;
+}
+
+#upBt.cover {
+    display: none;
+}
+
+.Thumbnails {
+    background-color: white;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbImg {
+    width: 100%;
+    height: calc(100% / 5);
+    border: 1px solid cyan;
+}
+
+.text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
