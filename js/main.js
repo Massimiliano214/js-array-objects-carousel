@@ -142,4 +142,26 @@ backImg.addEventListener ("click",
 );
 
 
+const clock = setInterval(myFunction, 5000);
 
+
+
+
+function myFunction() {
+    if (activeImg < wrapImgDom.length - 1) {
+        wrapImgDom[activeImg].classList.remove("d_block");
+
+        activeImg++;
+
+        wrapImgDom[activeImg].classList.add("d_block");
+
+
+
+    } else if (activeImg >= wrapImgDom.length - 1) {
+        wrapImgDom[activeImg].classList.remove("d_block");
+
+        activeImg = 0;
+
+        wrapImgDom[activeImg].classList.add("d_block");
+    }
+}
