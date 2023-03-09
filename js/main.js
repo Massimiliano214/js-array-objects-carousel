@@ -40,7 +40,7 @@ for (let i = 0; i < images.length; i++) {
     `;
 
     wrapCont += insertImg;
-    console.log(wrapCont);
+    
 };
 
 listImg.innerHTML = wrapCont;
@@ -67,23 +67,26 @@ for (let i = 0; i < images.length; i++) {
     `;
 
 };
-
+console.log(thumbDom);
 
 /*
 for (let i = 0; i < thumbImg.length; i++) {
-    
+    thumbImg[i].addEventListener ("click",
+        function() {
+            thumbImg[i].classList.add("d_none");
+            const insertImg = thumbImg[i];
+            wrapCont += insertImg;
+            
+            console.log(insertImg);
+            console.log(wrapCont);
+        }  
+        
+
+
+    );   
 }
-thumbImg.addEventListener ("click",
-    function() {
-        thumbImg.classList.add("d_none");
-        const insertImg = thumbImg;
-        wrapCont += insertImg;
-    }  
-     
-
-
-);
 */
+
 nextImg.addEventListener ("click",
     function() {
         if (activeImg < wrapImgDom.length - 1) {
